@@ -1,0 +1,96 @@
+  <!-- JANGAN DI HAPUSSs -->
+    <!--============================== Section 3 Start  ======================-->
+    <div id="section3">
+        
+        <div class="tab-titles">
+            <p class="tab-links1 active-link1" onclick="opentab('class')"> 
+                Series</p>
+            <p class="tab-links1" onclick="opentab('body')"> 
+                Body</p>
+        </div>
+
+        <div class="garis"><h1>    </h1></div>
+
+        
+            <div class="tab-contents1 active-tab1" id="class">
+                <div class="series">
+                <p class="mobils-in show-link" onclick="opentab1('seri2')">M2</p>
+                <p class="mobils-in" onclick="opentab1('seri3')">M3</p>
+                </div>
+                
+            </div>
+
+            <div class="garis"> <h1>    </h1> </div>          
+                 
+
+            <div class="tab-contents1" id="body">
+                <div class="bodi">
+                <p>M3</p>
+
+                </div>
+                
+            </div>
+                    
+    </div>
+   <!--============================== Section 3 End  ======================-->
+     <div id="prewiew">
+            <div class="fill">
+                <div class="mobils-out show-content" id="seri2">
+                    <div class="car">
+                        <img src="images/cars/car1.png" alt=""> 
+                        <div class="car-body">
+                            <p1>BMW 2 Series Coupé</p1><br><br>
+                            <p2>GASOLINE</p2><br>
+                            <p3>Start From Rp 1.268.000.000 <i class="fa-regular fa-circle-question"></i> </p3><br><br>
+                            <p4><i class="fa-solid fa-angle-right"></i> Show More</p4><br>
+                        </div>                              
+                    </div>
+                </div>
+                <div class="mobils-out" id="seri3">
+                    <div class="car">
+                        <img src="images/cars/car2.png" alt=""> 
+                        <div class="car-body">
+                            <p1>BMW 2 Series Coupé</p1><br><br>
+                            <p2>GASOLINE</p2><br>
+                            <p3>Start From Rp 1.268.000.000 <i class="fa-regular fa-circle-question"></i> </p3><br><br>
+                            <p4><i class="fa-solid fa-angle-right"></i> Show More</p4><br>
+                        </div>                              
+                    </div>
+                </div>
+                
+            </div>
+        </div>   
+</body>
+<script>
+    var tablinks1 = document.getElementsByClassName("tab-links1");
+    var tabcontents1 = document.getElementsByClassName("tab-contents1");
+    var mobilins = document.getElementsByClassName("mobils-in");
+    var mobilouts = document.getElementsByClassName("mobils-out");
+
+    function opentab(tabname) {
+      for (tablink1 of tablinks1) {
+        tablink1.classList.remove("active-link1");
+        
+      }
+      for (tabcontent1 of tabcontents1) {
+        tabcontent1.classList.remove("active-tab1");
+      }
+     
+      
+        event.currentTarget.classList.add("active-link1");
+        document.getElementById(tabname).classList.add("active-tab1");        
+    }    
+    function opentab1(tabname){
+      for (mobilin of mobilins) {
+        mobilin.classList.remove("show-link");
+        
+      }
+      for (mobilout of mobilouts) {
+        mobilout.classList.remove("show-content");
+      } 
+      
+        event.currentTarget.classList.add("show-link");
+        document.getElementById(tabname).classList.add("show-content");  
+      
+    }    
+</script>

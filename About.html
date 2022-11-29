@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-about.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/51d56e4d13.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div id="header">
+        <div class="header-kiri">
+            <img src="http://drive.google.com/uc?export=view&id=1pcxg_tQbNgFX2AqN0GI-b3pPHbd9lEbP" alt="" class="logo">
+
+        </div>
+
+        <div class="header-kanan">
+            <nav>
+                <ul id="sidemenu">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="" id="on">About us</a></li>
+                     <li><a href="#footers">Contact us</a></li>
+                     <li><a href="contactus.html">Request for Service’s</a>
+                </ul>
+                <a href="index.html"></a><i class="fa-solid fa-house"></i>
+            </nav>
+        </div>
+    </div>
+    <div id="section1">
+        <div class="section1-kiri">
+            <h1>Leading the Future of Indonesia's Woods & Mebel Industry</h1>
+        </div>
+        <div class="section1-kanan">
+            <img src="http://drive.google.com/uc?export=view&id=1NSjb7WOLG4orVC9GdQNvSdoZ6DvJ1DuT" alt="">
+        </div>
+    </div>
+    <div id="section2">
+        <div class="section2-kiri">            
+            <img src="http://drive.google.com/uc?export=view&id=1g6jHFakkcYq2pqmqfRl9Ba0wcPJrVDcr" alt="">
+        </div>
+        <div class="section2-kanan">
+            <h1>MISSION</h1>
+            <h2>Our mission is to spread our passion for high quality 
+                Mebel from Indonesia to the rest of Asia.</h2>
+        </div>
+    </div>
+
+    <div id="footers">
+        <div class="maps-container">
+          <div class="map-kiri">
+            <p>Visit us on</p>
+            <div class="icons-footer">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p>Visit our store on</p>
+            <div class="tokopedia">
+              <img src="http://drive.google.com/uc?export=view&id=1JdeOKuUORuQPdpmPGDgobWYMYjCd7G6Y" alt="" />
+            </div>
+          </div>
+          <div class="map-kanan">
+            <p>OUR LOCATION</p>
+            <br />
+            <a>
+              Jl. SD Inpres No.25, RT.6/RW.6, Pulo Gebang, Kec. Cakung, Kota
+              Jakarta Timur, Daerah Khusus Ibukota Jakarta 13950, Indonesia</a
+            >
+            <p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d247.90369986447132!2d106.9550169806094!3d-6.202995244466643!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1669195806116!5m2!1sen!2sid"
+                width="600"
+                height="200"
+                style="border: 0; border-radius: 15px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </p>
+            <br />
+          </div>
+        </div>
+        <pp>for best experience, open with <span>Desktop Mode</span><br></pp>
+        <h1><p>© 2022 Jarvis .co. All rights reserved.</p></h1>
+      </div>
+    
+</body>
+<script>
+    window.onscroll = function() {myFunction()};
+    var header = document.getElementById("header");
+    var sticky = header.offsetTop;
+    function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    header.classList.add("active");
+  } else {
+    header.classList.remove("sticky");
+    header.classList.remove("active");
+  }
+}
+</script>
+<script src="/script.js/"></script>
+    
+</html>

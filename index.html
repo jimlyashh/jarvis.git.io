@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/51d56e4d13.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <div class="navbarKanan">
+          <nav>
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#section3">Our Products</a></li>
+              <li><a href="About.html">About us</a></li>
+              <li><a href="#footers">Contact us</a></li>
+              <li><a href="contactus.html">Request for Service’s</a></li>
+
+              <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <i class="fas fa-solid fa-house"></i>
+              <i class="fas fa-solid fa-cart-shopping"></i>
+              <i class="fas fa-solid fa-address-book"></i>
+            </ul>
+          </nav>
+        </div>
+        <div class="navbarKiri">
+          <img src="http://drive.google.com/uc?export=view&id=1pcxg_tQbNgFX2AqN0GI-b3pPHbd9lEbP" alt="" class="logo">
+        </div>
+      </div>
+      <!--==============================JUDUL======================-->
+      <div class="landing-content">
+        <div class="garis-atas"></div>
+      </div>
+      <div class="title">
+        <div class="container2">
+          <div class="row2">
+            <div class="title-kiri">
+              <h1>JARVIS .CO</h1>
+
+              <h2>#BornToCreate</h2>
+              <br />
+              <button class="button">Discover Us</button><br />
+              <button class="button2">Read More..</button>
+            </div>
+            <div class="title-kanan"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--============================== Section 1 Start ======================-->
+    <div id="section1">
+      <div class="container-section1">
+        <div class="gambar-kiri">
+          <h1>Vezmebel</h1>
+          <button class="button2">Discover The Vezmebel</button>
+        </div>
+        <div class="gambar-kanan">
+          <div class="title">
+            <h1>Medical Devices</h1>
+            <button class="button2">Discover The Medical Devices</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--============================== Section 1 End  ======================-->
+    <!--============================== Section 2 Start  ======================-->
+    <!--============================== List-Box ======================-->
+    <div id="section2">
+      <div class="container-section2">
+        <div class="kotak-1">
+          <h1>Get Started <i class="fa-solid fa-chevron-down"></i></h1>
+          <div class="select">
+            <select name="format" id="format">
+              <option selected disabled>Select Service</option>
+              <option value="1">Construction</option>
+              <option value="2">Interior Design</option>
+              <option value="3">Data Analyst</option>
+              <option value="4">Medical Devices</option>
+            </select>
+          </div>
+        </div>
+        <!--============================== List-Box  ======================-->
+        <div class="kotak-2">
+          <i class="fa-solid fa-hammer"></i><br />
+          <button class="button">Configurator</button>
+        </div>
+        <div class="kotak-3">
+          <i class="fa-solid fa-border-all"></i><br />
+          <button class="button2">Layout</button>
+        </div>
+        <div class="kotak-4">
+          <i class="fa-regular fa-address-book"></i><br />
+          <button class="button2">Contact Us</button>
+        </div>
+      </div>
+    </div>
+
+    <!--============================== Section 2 End  ======================-->
+    <!--============================== Section 3 Start  ======================-->
+    <div id="section3">
+      <div class="tab-titles">
+        <p class="tab-links1 active-link1" onclick="opentab('class')">
+          Vezmebel
+        </p>
+        <p class="tab-links1" onclick="opentab('body')">
+          Botak's Medical Devices
+        </p>
+      </div>
+      <div class="garis"><h1></h1></div>
+      <div class="tab-contents1 active-tab1" id="class">
+        <div class="series">
+          <p class="mobils-in" onclick="opentab1('all')">All Series</p>
+          <p class="mobils-in show-link" onclick="opentab1('seri2')">Meja</p>
+          <p class="mobils-in" onclick="opentab1('seri3')">Bangku</p>
+          <p class="mobils-in" onclick="opentab1('seri4')">Lemari</p>
+          <p class="mobils-in" onclick="opentab1('seri5')">Rak Sepatu</p>
+          <p class="mobils-in" onclick="opentab1('nakas')">Nakas</p>
+          <p class="mobils-in" onclick="opentab1('seri8')">Papan Tulis</p>
+          <p class="mobils-in" onclick="opentab1('seri-x')">X</p>
+          <p class="mobils-in" onclick="opentab1('seri-z')">Z</p>
+          <p class="mobils-in" onclick="opentab1('seri-m')">M</p>
+          <p class="mobils-in" onclick="opentab1('seri-i')">i</p>
+          <p class="mobils-in" onclick="opentab1('spc')">Custom</p>
+        </div>
+      </div>
+
+      <div class="tab-contents1" id="body">
+        <div class="bodi">
+          <p class="mobils-in" onclick="opentab1('coupe')">Coupé</p>
+          <p class="mobils-in" onclick="opentab1('convertible')">Covertible</p>
+          <p class="mobils-in" onclick="opentab1('sac')">
+            Sport Activity Coupé
+          </p>
+          <p class="mobils-in" onclick="opentab1('bmwi')">BMW i</p>
+          <p class="mobils-in" onclick="opentab1('sav')">
+            Sport Activity Vehicle
+          </p>
+          <p class="mobils-in" onclick="opentab1('touring')">Touring</p>
+          <p class="mobils-in" onclick="opentab1('roadster')">Roadster</p>
+        </div>
+      </div>
+    </div>
+    <!--============================== Section 3 End  ======================-->
+    <div class="garis2"><h1></h1></div>
+    <div id="prewiew">
+      <div class="fill">
+        <div class="mobils-out" id="all">
+          <img src="http://drive.google.com/uc?export=view&id=1PbPgYrf1ItGLD0qojo4iGl2xp9wrlWAn" alt="" />
+        </div>
+        <div class="mobils-out show-content" id="seri2">
+          <div class="car">
+            <div class="cars">
+              <img src="http://drive.google.com/uc?export=view&id=15H_14-GaD835RNnr0QbKoqN9YC9-x7EY" alt="" />
+              <div class="car-body">
+                <p1>Meja Lipat Dinding 80 x 40 </p1><br /><br />
+                <p2>Price</p2><br />
+                <p3
+                  >Start From Rp 950.000
+                  <i class="fa-regular fa-circle-question"></i> </p3
+                ><br /><br />
+                <a href="https://tokopedia.link/D01rpx0kbvb"
+                  ><i class="fa-solid fa-angle-right"></i> Show More</a
+                ><br />
+              </div>
+            </div>
+            <div class="cars">
+              <img src="http://drive.google.com/uc?export=view&id=1LhawWkJ7V1RsE26krl8LNQ7PN23qgQD3" alt="" />
+              <div class="car-body">
+                <p1>Meja TV Minimalis</p1><br /><br />
+                <p2>Price</p2><br />
+                <p3
+                  >Start From Rp 1.150.000
+                  <i class="fa-regular fa-circle-question"></i> </p3
+                ><br /><br />
+                <a href="https://tokopedia.link/D01rpx0kbvb"
+                  ><i class="fa-solid fa-angle-right"></i> Show More</a
+                ><br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobils-out" id="nakas">
+          <div class="car">
+            <div class="cars">
+              <img src="http://drive.google.com/uc?export=view&id=1XdhhnlMEgQgvQvkOkr5GjsOu_aGhdD7f" alt="" />
+              <div class="car-body">
+                <p1>Nakas Minimalis</p1><br /><br />
+                <p2>Price</p2><br />
+                <p3
+                  >Start From Rp 450.000
+                  <i class="fa-regular fa-circle-question"></i> </p3
+                ><br /><br />
+                <a href="https://tokopedia.link/D01rpx0kbvb"
+                  ><i class="fa-solid fa-angle-right"></i> Show More</a
+                ><br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="garis2"><h1></h1></div>
+
+    <div id="footers">
+      <div class="maps-container">
+        <div class="map-kiri">
+          <p>Visit us on</p>
+          <div class="icons-footer">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <p>Visit our store on</p>
+          <div class="tokopedia">
+            <img src="http://drive.google.com/uc?export=view&id=1JdeOKuUORuQPdpmPGDgobWYMYjCd7G6Y" alt="" />
+          </div>
+        </div>
+        <div class="map-kanan">
+          <p>OUR LOCATION</p>
+          <br />
+          <a>
+            Jl. SD Inpres No.25, RT.6/RW.6, Pulo Gebang, Kec. Cakung, Kota
+            Jakarta Timur, Daerah Khusus Ibukota Jakarta 13950, Indonesia</a
+          >
+          <p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d247.90369986447132!2d106.9550169806094!3d-6.202995244466643!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1669195806116!5m2!1sen!2sid"
+              width="600"
+              height="200"
+              style="border: 0; border-radius: 15px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </p>
+          <br />
+        </div>
+      </div>
+      <pp>for best experience, open with <span>Desktop Mode</span><br></pp
+      >
+      <h1><p>© 2022 Jarvis .co. All rights reserved.</p></h1>
+    </div>
+  </body>
+  <script>
+    var tablinks1 = document.getElementsByClassName("tab-links1");
+    var tabcontents1 = document.getElementsByClassName("tab-contents1");
+    var mobilins = document.getElementsByClassName("mobils-in");
+    var mobilouts = document.getElementsByClassName("mobils-out");
+
+    function opentab(tabname) {
+      for (tablink1 of tablinks1) {
+        tablink1.classList.remove("active-link1");
+      }
+      for (tabcontent1 of tabcontents1) {
+        tabcontent1.classList.remove("active-tab1");
+      }
+
+      event.currentTarget.classList.add("active-link1");
+      document.getElementById(tabname).classList.add("active-tab1");
+    }
+    function opentab1(tabname) {
+      for (mobilin of mobilins) {
+        mobilin.classList.remove("show-link");
+      }
+      for (mobilout of mobilouts) {
+        mobilout.classList.remove("show-content");
+      }
+
+      event.currentTarget.classList.add("show-link");
+      document.getElementById(tabname).classList.add("show-content");
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+
+  <!--==============================
+<script>
+    var tablinks1 = document.getElementsByClassName("tab-links1");
+    var tabcontents1 = document.getElementsByClassName("tab-contents1");
+    var tablinks2 = document.getElementsByClassName("tab-links2");
+    var tabcontents2 = document.getElementsByClassName("tab-contents2");
+
+    function opentab(tabname) {
+      for (tablink1 of tablinks1) {
+        tablink1.classList.remove("active-link1");
+      }
+      for (tabcontent1 of tabcontents1) {
+        tabcontent1.classList.remove("active-tab1");
+      }    
+      for (tablink2 of tablinks2) {
+        
+        }
+       for (tabcontent2 of tabcontents2) {
+        }
+        event.currentTarget.classList.add("active-link1");
+        document.getElementById(tabname).classList.add("active-tab1");  
+      
+    }
+  </script>
+   Beda Mobil  ======================-->
+</html>

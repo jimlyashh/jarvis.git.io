@@ -1,0 +1,727 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "ubuntu";
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: transparent;
+  color: black;
+}
+#header {
+  background-image: url("http://drive.google.com/uc?export=view&id=1xgJiI1yWffv6VU1cGyhrOKlb-39Jh-Oh");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+}
+#all img {
+  max-width: 90%;
+  height: auto;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 5px;
+  align-items: center;
+  padding-top: 20px;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+/*=========NAVIGATOR START======*/
+nav {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 10px;
+}
+nav ul i {
+  color: rgb(0, 0, 0);
+  margin: 10px;
+  margin-left: 20px;
+}
+nav ul li a {
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a::after {
+  content: " ";
+  width: 0;
+  height: 4px;
+  background: rgb(182, 138, 43);
+  position: absolute;
+  left: 0px;
+  bottom: -47px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.navbarKiri i {
+  color: white;
+  padding: 10px;
+}
+#sidemenu {
+  display: flex;
+}
+.icons {
+  margin-left: 200px;
+  font-size: 20px;
+  margin-right: -300px;
+}
+.icons i:hover {
+  cursor: pointer;
+  color: rgb(182, 138, 43);
+}
+
+/*=========NAVIGATOR END======*/
+.garis-atas {
+  color: rgb(182, 138, 43);
+  box-shadow: 0px 0px 2px 0.5px rgb(182, 138, 43);
+  height: 0px;
+  min-width: 75%;
+  display: inline-block;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 20px;
+}
+/*=============== TITLE ============= */
+.title-kiri {
+  flex-basis: 50%;
+  padding-left: 11%;
+  margin-top: 2%;
+
+  text-align: left;
+}
+.title-kiri h1 {
+  font-weight: lighter;
+  font-size: 50px;
+}
+.title-kiri h2 {
+  font-weight: lighter;
+}
+.title-kiri .button2:hover {
+  background-color: rgb(182, 138, 43);
+  color: white;
+  cursor: pointer;
+}
+.title-kanan {
+  flex-basis: 50%;
+  padding-right: 14%;
+  text-align: right;
+  margin-top: 10px;
+}
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: rgb(0, 0, 0);
+}
+.button {
+  background-color: rgb(188, 158, 93); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button:hover {
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  color: rgb(188, 158, 93);
+  background-color: rgb(245, 245, 245);
+  border: 2px 2px 2px 2px;
+}
+.button2 {
+  background-color: transparent; /* Green */
+  border: 2px 2px 2px 2px;
+  border-color: rgb(182, 138, 43);
+  color: rgb(182, 138, 43);
+  font-weight: bold;
+  padding: 15px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 2%;
+}
+
+/*================== section1 ==============*/
+.container-section1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: black;
+
+  height: 250px;
+}
+#section1 .gambar-kiri {
+  flex-basis: 49.8%;
+  background-image: url('http://drive.google.com/uc?export=view&id=19Wd5rFzCdZTj6_xt0Qw5wjb3MzwmGTK2');
+  background-position: center;
+  background-size: cover;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 2px;
+}
+#section1 .gambar-kanan {
+  flex-basis: 49.8%;
+  background-image: url('http://drive.google.com/uc?export=view&id=14EgyWlfIAdzrG1ryFAulT0-waQKMJ3S1');
+  background-position: center;
+  background-size: cover;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+}
+
+.container-section1 .gambar-kanan .button2 {
+  justify-content: end;
+}
+.gambar-kiri {
+  padding-top: 10%;
+  text-align: right;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+.gambar-kanan {
+  padding-top: 10%;
+  text-align: left;
+  padding-left: 25px;
+  padding-bottom: 10px;
+}
+.gambar-kanan .button2:hover {
+  background-image: url(Images/Vezmebel-v2.png);
+  cursor: pointer;
+}
+.gambar-kiri .button2:hover {
+  background-image: url(Images/Vezmebel-v2.png);
+  cursor: pointer;
+}
+.container-section1 h1 {
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+.container-section1 .button2 {
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+}
+/*================= Section 1 END ============== */
+
+/*================== section2 ==============*/
+.container-section2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: black;
+  padding-top: 25px;
+  height: 125px;
+}
+.kotak-1 {
+  flex-basis: 40%;
+  background-color: rgb(238, 238, 238);
+  align-items: left;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-weight: lighter;
+  padding-top: 25px;
+}
+/*========= listbox==========*/
+.kotak-1 select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 5;
+  border-color: #a8a8a8;
+  background-image: none;
+  margin-left: 50px;
+  margin-top: 4px;
+  font-size: 15px;
+  overflow: auto;
+}
+.kotak-1 h1 i {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+.kotak-1 select::-ms-expand {
+  display: none;
+}
+.kotak-1 select {
+  position: relative;
+  display: flex;
+  width: 28em;
+  height: 4em;
+  line-height: 3;
+  background: white;
+}
+.kotak-1 select {
+  flex: 1;
+  padding: 0.5em;
+  cursor: pointer;
+}
+.kotak-1 select i {
+  color: black;
+  font-family: "Arial", sans-serif;
+}
+.kotak-1 select:hover {
+  box-shadow: 5px 5px 15px 1px #a8a8a8;
+}
+/*========= listbox==========*/
+
+.kotak-1 h1 {
+  text-align: left;
+  padding-left: 50px;
+  font-weight: lighter;
+  text-align: justify;
+}
+.kotak-2 {
+  flex-basis: 20%;
+  background-color: rgb(238, 238, 238);
+  font-size: 38px;
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.kotak-3 {
+  flex-basis: 20%;
+  background-color: rgb(238, 238, 238);
+  font-size: 38px;
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.kotak-4 {
+  flex-basis: 19%;
+  background-color: rgb(238, 238, 238);
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.container-section2 i {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-size: 35px;
+}
+.container-section2 .button2 {
+  color: black;
+  border-color: black;
+  padding-bottom: 10px;
+}
+/*================== section2 END    ==============*/
+#section3 {
+  padding-top: 100px;
+  padding-left: 50px;
+}
+.tab-titles {
+  display: flex;
+  gap: 40px;
+  height: 50px;
+}
+.tab-titles p {
+  font-size: 18px;
+  font-weight: bold;
+  color: gray;
+}
+.tab-links1 {
+  cursor: pointer;
+}
+.series {
+  padding-top: 25px;
+  display: flex;
+  gap: 40px;
+  height: 50px;
+  padding-bottom: 50px;
+}
+.bodi {
+  padding-top: 25px;
+  display: flex;
+  gap: 40px;
+  height: 50px;
+  padding-bottom: 50px;
+}
+.tab-contents1 p {
+  font-size: 18px;
+  font-weight: bold;
+  color: gray;
+}
+.tab-links2 {
+  cursor: pointer;
+}
+
+.class h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: gray;
+}
+
+.garis {
+  border: 1px solid rgb(220, 220, 220);
+  height: 2px;
+  max-width: 95%;
+}
+.garis2 {
+  border: 1px solid rgb(220, 220, 220);
+  height: 2px;
+  max-width: 91.5%;
+  margin-left: 50px;
+}
+
+/*======================= Section 3 Start ===============*/
+#section3 p {
+  cursor: pointer;
+}
+.car-body a {
+  cursor: pointer;
+}
+
+/*======================= List-Box ===============*/
+
+/*======================= List-Box ===============*/
+/*======================= Preview Start ===============*/
+.fill {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  padding-left: 50px;
+  padding-bottom: 25px;
+}
+.car {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.cars {
+  border-radius: 10px 10px;
+  background-color: rgb(255, 255, 255);
+  height: 400px;
+  width: 250px;
+  position: relative;
+  overflow: hidden;
+}
+.car img {
+  width: 110%;
+  height: 50%;
+  border-radius: 10px;
+  display: block;
+  object-fit: contain;
+  justify-content: center;
+}
+.car-body {
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 20%;
+}
+.car-body h3 {
+  text-align: center;
+}
+.car-body p {
+  text-align: center;
+}
+.car p1 {
+  font-size: 18px;
+}
+.car p2 {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(69, 69, 69);
+}
+.car p4 i {
+  font-size: 18px;
+  font-weight: bold;
+  color: grey;
+}
+.car p3 i {
+  font-size: 18px;
+  font-weight: bold;
+}
+.car a {
+  font-weight: bold;
+  color: rgb(36, 36, 36);
+}
+.mobils-out {
+  width: auto;
+  display: inline-block;
+  justify-content: space space-between;
+  flex-wrap: wrap;
+}
+.cars img:hover {
+  scale: 1.2;
+}
+/*======================= Preview End ===============*/
+
+/*============ Content =============== */
+.tab-contents1 {
+  display: none;
+  transition: opacity 1s ease-out;
+  opacity: 0;
+}
+.tab-contents1.active-tab1 {
+  display: block;
+  opacity: 1;
+}
+.mobils-in:hover {
+  color: rgb(65, 65, 65);
+}
+
+.mobils-out.show-content {
+  display: block;
+  opacity: 1;
+}
+.mobils-out {
+  display: none;
+}
+/*============ Content =============== */
+/*====== MAPS Section=================*/
+#footers {
+  padding-top: 5%;
+  color: white;
+}
+.maps-container {
+  display: flex;
+  justify-content: space-around;
+  height: 55vh;
+  background-color: rgb(188, 158, 93);
+}
+.map-kiri,
+.map-kanan {
+  flex-basis: 45%;
+  border: 2px 2px;
+  margin-top: 50px;
+  max-width: auto;
+}
+.maps-container p {
+  font-family: "ubuntu";
+  font-weight: bold;
+  text-align: center;
+}
+.maps-container a {
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.map-kiri p {
+  font-size: 30px;
+}
+.map-kiri i {
+  color: white;
+}
+.icons-footer {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+.icons-footer a {
+  font-size: 30px;
+  text-decoration: none;
+  margin-right: 15px;
+  color: rgb(0, 0, 0);
+}
+.tokopedia {
+  display: flex;
+  justify-content: center;
+  height: 10.5vh;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+.tokopedia img {
+  height: 60px;
+  width: 60;
+  text-align: center;
+  background-color: rgb(255, 247, 229);
+  border-radius: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  cursor: pointer;
+}
+#footers h1 {
+  color: rgb(255, 255, 255);
+  background-color: rgb(168, 135, 66);
+  text-align: center;
+  font-size: 20px;
+  font-weight: lighter;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#footers pp {
+  display: none;
+  color: black;
+}
+#footers h1   {
+  font-size: 14px;
+}
+
+/*==========Media Preview===========*/
+nav .fas {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url("http://drive.google.com/uc?export=view&id=1xgJiI1yWffv6VU1cGyhrOKlb-39Jh-Oh");
+    height: 120vh;
+  }
+  /*===== Section 1 media =======*/
+  .title-kiri .button {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+  .title-kiri .button2 {
+    padding: 12px 10px;
+    font-size: 13px;
+  }
+  .container-section1 {
+    display: grid;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    color: black;
+    height: 250px;
+    font-size: 20px;
+    width: auto;
+  }
+  .container-section1 {
+    display: block;
+  }
+  /*====button-----*/
+  .button2 {
+    padding:15px 15px
+  }
+
+  /*===== Section 1 media =======*/
+  /*===== Section 2 media =======*/
+
+  /*=-============ scroll category menu horizontal ===============*/
+  .series {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .series p {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+  }
+  .series p:hover {
+    background-color: #777;
+    color: black;
+  }
+  /*=-============ scroll category menu horizontal ===============*/
+  .gambar-kanan,
+  .gambar-kiri {
+    flex-basis: 390px;
+  }
+  .maps-container {
+    display: grid;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    color: black;
+    height: 250px;
+    font-size: 20px;
+    width: auto;
+  }
+  .map-kiri,
+  .map-kanan {
+    flex-basis: 100%;
+  }
+  .maps-container {
+    display: none;
+  }
+
+  #section2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    flex-basis: auto;
+    background-color: rgb(238, 238, 238);
+  }
+  #section2 i {
+    display: none;
+  }
+  .kotak-2,
+  .kotak-3,
+  .kotak-4 {
+    flex-basis: 100%;
+    width: auto;
+  }
+  .kotak-1 select {
+    width: 18em;
+    margin-left: -10px;
+  }
+  /*===== Section 2 media =======*/
+  /*===== Nav and etc =====*/
+  nav .fas {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  nav .fas:hover {
+    color: rgb(182, 138, 43);
+  }
+  nav ul li {
+    display: none;
+  }
+  .icons {
+    display: none;
+  }
+  .garis-atas {
+    width: auto;
+    height: 0px;
+    min-width: 50%;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  /*===== Nav and etc =====*/
+  .fill {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+  #footers pp {
+    display: block;
+    color: black;
+    text-align: center;
+  }
+}
+/*==========Media Preview===========*/
+
+/*
+container2
+ display: flex;
+    justify-content: space-between;
+    padding: 5px 5px;
+    align-items: center;
+    padding-top: 0px;
+    margin-left: 20px;
+    margin-right: 14%;
+    color: white;
+    */
