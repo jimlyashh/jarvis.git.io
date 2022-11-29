@@ -147,10 +147,7 @@
   /*=========== SECTION 2 ============*/
   #section2{
     height: 50vh;
-  }
-  
-  
-  
+  } 
   /*=========== SECTION 2 ============*/
 
 
@@ -268,6 +265,9 @@
       padding-top: 8px;
       font-size: 25px;
     }
+    .header-kanan nav a{
+      color: rgb(168, 135, 66);
+    }
     #section1, #section2{
       display: grid;
       
@@ -291,9 +291,26 @@
     nav i{
       cursor: pointer;
     }
-
-   
+    .section2-kanan{
+      height: 10vh;
+    }
+    #section2{
+      margin-bottom: 20px;
+    }
+    
+    .layer-form{
+      padding-left: 20px;
+    }
+    .maps-container{
+      margin-top: 20px;
+      display: grid;
+      height: 120vh;
+    }
+    iframe{
+      width: auto;
+    }  
   }
+
    /*===============sticky header==============*/
   .content {
     padding: 16px;

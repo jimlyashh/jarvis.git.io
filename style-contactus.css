@@ -1,255 +1,301 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "ubuntu";
-    box-sizing: border-box;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    background-color: transparent;
-    color: black;
-  }
-  #header{
+  margin: 0;
+  padding: 0;
+  font-family: "ubuntu";
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: transparent;
+  color: black;
+}
+#header {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  height: 10vh;
+  position: sticky;
+  transition: 1s;
+}
+
+/*========= Flex Header =========*/
+.header-kanan {
+  flex-basis: 70%;
+
+  padding-top: 15px;
+}
+.header-kiri {
+  flex-basis: 30%;
+  text-align: center;
+}
+/*========= Flex Header =========*/
+
+/*====== Logo Posisi ======*/
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+/*====== Logo Posisi ======*/
+
+/*============== NAVIGATOR=========*/
+#on {
+  color: black;
+  transition: 0.5s;
+}
+#on::after {
+  content: " ";
+  width: 100%;
+  height: 4px;
+  background: rgb(0, 0, 0);
+  position: absolute;
+  left: 0px;
+  bottom: -27px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 10px;
+}
+nav ul i {
+  color: rgb(0, 0, 0);
+  margin: 10px;
+  margin-left: 20px;
+}
+nav ul li a {
+  color: rgb(182, 138, 43);
+  font-size: 17px;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a::after {
+  content: " ";
+  width: 0;
+  height: 4px;
+  background: rgb(182, 138, 43);
+  position: absolute;
+  left: 0px;
+  bottom: -27px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-kanan i {
+  display: none;
+}
+/*============== NAVIGATOR=========*/
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+#section1 {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  width: auto;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+/*===========contact form==========*/
+.layer-form {
+  padding-top: 150px;
+}
+
+.contact-form form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #d8d8d8;
+  padding: 15px;
+  margin: 15px 0;
+  color: rgb(0, 0, 0);
+  border-radius: 6px;
+}
+form .btn2 {
+  display: flex;
+  padding: 10px 50px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: rgb(168, 135, 66);
+  border-radius: 15px;
+  color: white;
+  border-color: white;
+}
+form .btn2:hover {
+  color: rgb(168, 135, 66);
+  background-color: rgb(0, 0, 0);
+}
+/*===========contact form==========*/
+
+/*------------------- Footers -------------------8*/
+#footers {
+  padding-top: 5%;
+  color: white;
+}
+.maps-container {
+  display: flex;
+  justify-content: space-around;
+  height: 55vh;
+  background-color: rgb(188, 158, 93);
+}
+.map-kiri,
+.map-kanan {
+  flex-basis: 45%;
+  border: 2px 2px;
+  margin-top: 50px;
+  max-width: auto;
+}
+.maps-container p {
+  font-family: "ubuntu";
+  font-weight: bold;
+  text-align: center;
+}
+.maps-container a {
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.map-kiri p {
+  font-size: 30px;
+}
+.map-kiri i {
+  color: white;
+}
+.icons-footer {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+.icons-footer a {
+  font-size: 30px;
+  text-decoration: none;
+  margin-right: 15px;
+  color: rgb(0, 0, 0);
+}
+.tokopedia {
+  display: flex;
+  justify-content: center;
+  height: 10.5vh;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+.tokopedia img {
+  height: 60px;
+  width: 60;
+  text-align: center;
+  background-color: rgb(255, 247, 229);
+  border-radius: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  cursor: pointer;
+}
+#footers h1 {
+  color: rgb(255, 255, 255);
+  background-color: rgb(168, 135, 66);
+  text-align: center;
+  font-size: 20px;
+  font-weight: lighter;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#footers h1 {
+  color: rgb(255, 255, 255);
+  background-color: rgb(168, 135, 66);
+  text-align: center;
+  font-size: 20px;
+  font-weight: lighter;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#footers pp {
+  display: none;
+  color: black;
+}
+#footers h1 {
+  font-size: 14px;
+}
+/*------------------- Footers -------------------8*/
+
+/*===============sticky header==============*/
+
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 102px;
+}
+#header.active {
+  transition: 0.8s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+/*===============sticky header==============*/
+
+/*================ MEDIA MOBILE ============*/
+
+@media only screen and (max-width: 600px) {
+  #header {
     display: flex;
-    background-color: white;
-    justify-content: space-around;  
-    height: 10vh;
-    position: sticky;
-    transition: 1s;
-      
+    height: 12vh;
   }
-  
-  /*========= Flex Header =========*/
-  .header-kanan{
-    flex-basis: 70%;
-    
-    padding-top: 15px;
-  }
-  .header-kiri{
-    flex-basis: 30%;
-    text-align: center;
-  }
-  /*========= Flex Header =========*/
-  
-  /*====== Logo Posisi ======*/
-  .logo {
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
-  }
-  /*====== Logo Posisi ======*/
-  
-  /*============== NAVIGATOR=========*/
-  #on{
-    color: black;
-    transition: 0.5s;
-  }
-  #on::after{
-    content: " ";
-    width: 100%;
-    height: 4px;
-    background: rgb(0, 0, 0);
-    position: absolute;
-    left: 0px;
-    bottom: -27px;
-  }
-  nav {
+  #sidemenu { /*============== sidemenu atas kanan biar baris dan rapih=========*/
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: nowrap;
   }
-  nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 10px;
+  form input,
+  form textarea {
+    width: 90%; /*============= lebar kotak form ===========*/
   }
-  nav ul i {
-    color: rgb(0, 0, 0);
-    margin: 10px;
-    margin-left: 20px;
+  .layer-form {
+    padding-left: 20px; /*========= jarak Form Request dari kiri ==========*/
   }
-  nav ul li a {
-    color: rgb(182, 138, 43);
-    font-size: 17px;
-    position: relative;
-    text-decoration: none;
-    font-weight: bold;
+  .maps-container {
+    display: grid;
+    height: 120vh;
   }
-  nav ul li a::after {
-    content: " ";
-    width: 0;
-    height: 4px;
-    background: rgb(182, 138, 43);
-    position: absolute;
-    left: 0px;
-    bottom: -27px;
-    transition: 0.5s;
+  iframe {
+    width: auto; /*========== ngikutin ukuraan layar Google Maps =========*/
   }
-  nav ul li a:hover::after {
-    width: 100%;
-  }
-  
-  .header-kanan i{
-    display: none;
-  }
-  /*============== NAVIGATOR=========*/
-  .logo {
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
-  }
-  #section1{
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    width: auto;
-    height: auto;
-    justify-content: center;
+  nav ul .fas { /*============== mobile menu tampil ===============*/
+    display: block;
+    font-size: 20px;
+    padding-top: 0px;
+    cursor: pointer;
     align-items: center;
   }
-  /*===========contact==========*/
-  .layer-form{
-    padding-top: 150px;
+  #sidemenu li a {  /*============ hide menu saat mobile */
+    display: none;
   }
- 
-  
-  .contact-form form{
-    width: 100%;
-  }
-  form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #d8d8d8;
-    padding: 15px;
-    margin: 15px 0;
-    color: rgb(0, 0, 0);
-    border-radius: 6px;
-  }
-  form .btn2{
+  .mobile-menu {
+    display: block;
     display: flex;
-    padding: 10px 50px;
-    font-size: 16px;
-    margin-top: 20px;
+  }
+  .mobile-menu a {
     cursor: pointer;
-    background-color:rgb(168, 135, 66) ;
-    border-radius: 15px;
-    color: white;
-    border-color: white;
   }
-  form .btn2:hover{
-    color: rgb(168, 135, 66);
-    background-color: rgb(0, 0, 0);
-  }
-
-     /*===============sticky header==============*/
-    
-    .content {
-      padding: 16px;
-    }
-    .sticky {
-      position: fixed;
-      top: 0;
-      width: 100%
-    }
-    .sticky + .content {
-      padding-top: 102px;
-    }
-    #header.active {
-      transition: 0.8s;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);     
-    }
-    /*===============sticky header==============*/
-    
-    /*------------------- Footers -------------------8*/
-    #footers {
-        padding-top: 5%;
-        color: white;
-      }
-      .maps-container {
-        display: flex;
-        justify-content: space-around;
-        height: 55vh;
-        background-color: rgb(188, 158, 93);
-      }
-      .map-kiri,
-      .map-kanan {
-        flex-basis: 45%;
-        border: 2px 2px;
-        margin-top: 50px;
-        max-width: auto;
-      }
-      .maps-container p {
-        font-family: "ubuntu";
-        font-weight: bold;
-        text-align: center;
-      }
-      .maps-container a {
-        display: flex;
-        color: rgb(255, 255, 255);
-        font-size: 15px;
-        text-align: center;
-        padding-bottom: 20px;
-      }
-      .map-kiri p {
-        font-size: 30px;
-      }
-      .map-kiri i {
-        color: white;
-      }
-      .icons-footer {
-        padding-top: 50px;
-        padding-bottom: 30px;
-        display: flex;
-        gap: 60px;
-        justify-content: center;
-      }
-      .icons-footer a {
-        font-size: 30px;
-        text-decoration: none;
-        margin-right: 15px;
-        color: rgb(0, 0, 0);
-      }
-      .tokopedia {
-        display: flex;
-        justify-content: center;
-        height: 10.5vh;
-        padding-top: 10px;
-        margin-top: 15px;
-      }
-      .tokopedia img {
-        height: 60px;
-        width: 60;
-        text-align: center;
-        background-color: rgb(255, 247, 229);
-        border-radius: 15px;
-        padding-left: 25px;
-        padding-right: 25px;
-        cursor: pointer;
-      }
-    #footers h1 {
-        color: rgb(255, 255, 255);
-        background-color: rgb(168, 135, 66);
-        text-align: center;
-        font-size: 20px;
-        font-weight: lighter;
-        padding-top: 15px;
-        padding-bottom: 15px;
-      }
-      #footers h1   {
-        color: rgb(255, 255, 255);
-        background-color: rgb(168, 135, 66);
-        text-align: center;
-        font-size: 20px;
-        font-weight: lighter;
-        padding-top: 15px;
-        padding-bottom: 15px;
-      }
-      #footers pp {
-        display: none;
-        color: black;
-      }
-      #footers h1   {
-        font-size: 14px;
-      }
-      /*------------------- Footers -------------------8*/
+  /*================ MEDIA MOBILE ============*/
+}

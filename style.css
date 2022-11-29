@@ -289,6 +289,9 @@ nav ul li a:hover::after {
 .kotak-1 select:hover {
   box-shadow: 5px 5px 15px 1px #a8a8a8;
 }
+.kotak-4 .button2{
+  cursor: pointer;
+}
 /*========= listbox==========*/
 
 .kotak-1 h1 {
@@ -618,7 +621,7 @@ nav .fas {
   /*===== Section 2 media =======*/
 
   /*=-============ scroll category menu horizontal ===============*/
-  .series {
+  .series, .bodi{
     overflow: auto;
     white-space: nowrap;
   }
@@ -650,22 +653,31 @@ nav .fas {
     flex-basis: 100%;
   }
   .maps-container {
-    display: none;
+    display: block;
   }
+  
+  
+  /*===== Section 2 media =======*/
 
   #section2 {
     margin-top: 50px;
-    margin-bottom: 50px;
-    padding-bottom: 200px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     white-space: nowrap;
     flex-basis: auto;
     background-color: rgb(238, 238, 238);
+    height: 80vh;
   }
   #section2 i {
     display: none;
+  }
+  #section2 .button2{
+    width: 60%;
+  }
+  #section2 .button2:hover{
+    background-color: white;
+    color: rgb(168, 135, 66);
   }
   .kotak-2,
   .kotak-3,
@@ -710,6 +722,31 @@ nav .fas {
     display: block;
     color: black;
     text-align: center;
+  }
+  .kotak-4 .button2{
+    cursor: pointer;
+  }
+  /*============== Footer===============*/
+  .layer-form{
+    padding-left: 20px;
+  }
+  .maps-container{
+    margin-top: 20px;
+    display: grid;
+    height: 120vh;
+  }
+  iframe{
+    width: auto;
+  } 
+  #footers p{
+    color: white;
+  }
+  /*============== Footer===============*/
+  .garis2{
+    max-width: 70%;
+  }
+  .garis{
+    max-width: 80%;
   }
 }
 /*==========Media Preview===========*/
