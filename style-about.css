@@ -121,7 +121,7 @@
     flex-wrap: nowrap;
     background-color: rgb(255, 255, 255);
     width: 45%;
-    height: 70%;
+    height: 50%;
     justify-content: center;    
     align-items: center;
     border-radius: 25px;
@@ -130,7 +130,7 @@
   .section2-kiri img,.section1-kanan img{  
     border-radius: 25px;
     width: 100%;
-    height: fit-content;
+    height: auto;
     }
   .section1-kiri, .section2-kanan h1{
     padding-left: 50px;
@@ -309,6 +309,9 @@
     iframe{
       width: auto;
     }  
+    #footers{
+      padding-top: 50px;
+    }
   }
 
    /*===============sticky header==============*/
